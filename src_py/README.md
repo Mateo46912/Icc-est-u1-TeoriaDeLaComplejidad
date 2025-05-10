@@ -28,6 +28,7 @@ Este proyecto compara empíricamente el rendimiento de 5 algoritmos de ordenamie
   - Mediciones precisas con `time.perf_counter()`
   - 5 repeticiones por algoritmo y tamaño
   - Análisis de complejidad temporal (notación Big O)
+  - Submuestreo progresivo
 
 
 ---
@@ -100,6 +101,8 @@ Tamano: 100000, Algoritmo: Shell, Tiempo: 0.288 segundos
 
 ## 🔚 CONCLUCIONES CON TERMINOLOGIA DE NOTACION 
 
+
+
 La comparación de tiempos de ejecución revela patrones claros acordes a la complejidad teórica de cada algoritmo:
 
 ### Burbuja y Burbuja Optimizado :
@@ -127,3 +130,13 @@ Para *n = 100k*:
 Shell Sort es 1,240× más rápido que Burbuja (0.288s vs 357s), brecha que crece exponencialmente con *n*.
 
 Los métodos O(n²) requieren minutos/horas para n > 500k, mientras Shell Sort mantiene tiempos en segundos.
+
+## 👨‍💻 Submuestreo Progresivo :
+
+Se genera un único arreglo grande (ej. 100k elementos) y de él se extraen subconjuntos progressivamente más grandes, garantizando que:
+
+- Cada subarreglo contiene todos los elementos del anterior
+
+- Los primeros elementos son idénticos en todos los tamaños
+
+Además, La tecnica submuestreo progresiva asegura que las comparaciones entre algoritmos sean válidas y significativas, ya que las diferencias en tiempo de ejecución se deben únicamente al rendimiento del algoritmo y no a variaciones en los datos de entrada.
