@@ -80,7 +80,7 @@ Tamano: 100000, Algoritmo: Shell, Tiempo: 0.288 segundos
 
 ```````
 
-## 📈 Tabla de Tiempos de Ejecución (segundos)
+## ⚡ Tabla de Tiempos de Ejecución (segundos)
 
 | Algoritmo           | 5,000 elementos | 10,000 elementos | 30,000 elementos | 50,000 elementos | 100,000 elementos |
 |---------------------|-----------------|------------------|------------------|------------------|-------------------|
@@ -92,7 +92,7 @@ Tamano: 100000, Algoritmo: Shell, Tiempo: 0.288 segundos
 `
 
 
-## 🖼️ EJEMPLO DE ADICIÓN DE DATOS EN ESTE INFORME
+## 📈 EJEMPLO DE ADICIÓN DE DATOS EN ESTE INFORME
  
 ![alt text](image.png)
 
