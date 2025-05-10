@@ -15,7 +15,7 @@ if __name__ == "__main__":
     metodos = MetodosOrdenamiento()
     
     #tam = 1000
-    #para practica crear solo un arreglo grabde y ese dividirlo
+    #para practica crear solo un arreglo grande y ese dividirlo
 
     tamanios = [5000, 10000, 30000,50000,100000]
     resultados = []
@@ -40,8 +40,8 @@ if __name__ == "__main__":
             tupla_resultado = (tam, nombre, tiempo_resultado)
             resultados.append(tupla_resultado)
 
-        for tam, nombre, tiempo_resultado in resultados:
-            print(f"\n -TAMAÑO-: {tam} , --NOMBRE METODO--: {nombre}, -TIEMPO-: {tiempo_resultado: .6f} segundos") 
+    for tam, nombre, tiempo_resultado in resultados:
+        print(f"\n -TAMAÑO-: {tam} , --NOMBRE METODO--: {nombre}, -TIEMPO-: {tiempo_resultado: .6f} segundos") 
 
     tiempos_by_metodo = {
         "Burbuja":[],
